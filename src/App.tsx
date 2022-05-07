@@ -3,7 +3,6 @@ import './App.css';
 import JobList from './Components/JobsList/JobList';
 
 const App:React.FC = () => {
-
   const [error, setError] = useState<any>(null);
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
   const [jobs, setJobs] = useState<[]>([]);
@@ -24,7 +23,7 @@ const App:React.FC = () => {
 
   return (
     <div className="App">
-      <JobList />
+      <JobList jobs={jobs} />
     </div>
   );
 }

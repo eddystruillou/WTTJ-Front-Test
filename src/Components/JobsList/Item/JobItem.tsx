@@ -1,17 +1,22 @@
 import React from 'react';
-import './JobItem.css';
 import { Text } from '@welcome-ui/text';
 import { Button } from '@welcome-ui/button';
+import { Job } from '../../../model';
+import './JobItem.css';
 
-const JobItem = () => {
-  return (
-    <div className="jobItem">
-        <Text variant="subtitle1">Intitulé du Poste</Text>
-        <Text variant="subtitle2">Type de contrat</Text>
-        <Text variant="subtitle2">Localisation</Text>
-        <Button variant="tertiary" size='sm'>Show More</Button>
+interface Props {
+  job: Job;
+}
+
+const JobItem: React.FC<Props> = ({ job }) => {
+  return <div className="jobItem">
+    <div className="jobName">
+      <Text variant="subtitle1">{job.name}</Text>
     </div>
-  )
+    <Text variant="subtitle2">{job.contract_type.en}</Text>
+    <Text variant="subtitle2">{job.office.name}</Text>
+    <Button variant="tertiary" size='sm'>Show More</Button>
+  </div>
 }
 
 export default JobItem;

@@ -5,8 +5,12 @@
     background-color: white;
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 14px;
     box-shadow: 0 1px 2px rgb(36, 37, 38);
+}
+
+.jobName {
+    width: 50%;
 }
