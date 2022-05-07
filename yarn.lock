@@ -2273,6 +2273,13 @@
   resolved "https://registry.yarnpkg.com/@welcome-ui/system/-/system-4.0.5.tgz#4ee5922185ba96cd51b9ff6ea47b4c21bc08be2c"
   integrity sha512-6uZfOLQ6blVAIxJ2bU6sNrhU6FhTq7XbpyIUHsC+UdkIHeFtucAV22/9eCLKx67jHxb0VfsCvSTY27rGoTmVpA==
 
+"@welcome-ui/text@^4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/text/-/text-4.0.5.tgz#6da3b04a8a52a6181dae74c5b9697c88647c4ff8"
+  integrity sha512-GdKgY2Fgh/WGxIoNcgDyqFCpV2Z/ZQeWXGscGrCoxFnlcnumVsemgWxbaXUB64dJ9W7tR+QKCLXsfBw940qOrQ==
+  dependencies:
+    "@welcome-ui/system" "^4.0.5"
+
 "@welcome-ui/utils@^4.0.5":
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/@welcome-ui/utils/-/utils-4.0.5.tgz#3e80c4582e9b08a46f3e4dd1485816693f72b077"

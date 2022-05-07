@@ -6,6 +6,11 @@ const JobList = () => {
   return (
     <div className="jobList">
         <JobItem />
+        <JobItem />
+        <JobItem />
+        <JobItem />
+        <JobItem />
+        <JobItem />
     </div>
   )
 }

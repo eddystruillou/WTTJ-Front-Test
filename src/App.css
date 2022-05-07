@@ -9,7 +9,7 @@
   grid-template-columns: 20px 450px auto 20px;
   grid-template-rows: 80px 650px auto;
   margin: auto;
-  background-color: white;
+  background-color: rgb(246, 243, 239);;
   border-radius: 16px;
   box-shadow: 0 6px 15px rgb(36, 37, 38);
 }
