@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import JobList from './Components/JobsList/JobList';
+import SearchBar from './Components/Filters/SearchBar/SearchBar';
 
 const App:React.FC = () => {
   const [error, setError] = useState<any>(null);
@@ -23,6 +24,7 @@ const App:React.FC = () => {
 
   return (
     <div className="App">
+      <SearchBar />
       <JobList jobs={jobs} />
     </div>
   );
