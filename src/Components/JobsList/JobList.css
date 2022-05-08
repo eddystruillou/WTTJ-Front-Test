@@ -3,4 +3,5 @@
     grid-column-end: 4;
     grid-row-start: 2;
     border: solid 1px black;
+    overflow: scroll;
 }
