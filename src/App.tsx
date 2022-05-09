@@ -50,8 +50,8 @@ const App:React.FC = () => {
    * Update FiltredJobs
    */
    useEffect(() => {
-    // Change our text to lower case format and split the elements after a space
-    let text = inputTextValue.toLowerCase().split(' ');
+     // Change our text to lower case format and split the elements after a space
+     let text = inputTextValue.toLowerCase().split(' ');
     // We start to set up our filter only from 3 letters
     if(inputTextValue.length >= 2) {
       setFiltredJobs(jobs.filter(
@@ -61,10 +61,16 @@ const App:React.FC = () => {
           });
         })
       );
+    } else if (state.selectedField !== state.selectFields[0]) {
+      setFiltredJobs(jobs.filter(
+        (job: Job) => {
+            return job.department.name.includes(state.selectedField);
+        })
+      );
     } else {
       setFiltredJobs([]);
     }
-  }, [inputTextValue])
+  }, [inputTextValue, state])
 
   /**
    * Data recovery from the backend at application launch
@@ -76,7 +82,7 @@ const App:React.FC = () => {
           dispatch({
             type: "onBaseFilter",
             value: {
-              selectFields: Array.from(new Set(jobs.map((job: Job) => job.office.name)))
+              selectFields: Array.from(new Set(jobs.map((job: Job) => job.department.name)))
             }
           });
           setJobs(jobs);

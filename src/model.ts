@@ -4,6 +4,9 @@ export interface Job {
     contract_type: {
         en: string
     };
+    department: {
+        name: string;
+    };
     office: {
         name: string;
     };
