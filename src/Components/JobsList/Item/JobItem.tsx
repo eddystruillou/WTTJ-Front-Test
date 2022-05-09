@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text } from '@welcome-ui/text';
-import { Button } from '@welcome-ui/button';
 import JobDescription from '../../JobDescription/JobDescription';
 import { Job } from '../../../model';
 import './JobItem.css';

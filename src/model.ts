@@ -2,6 +2,8 @@ export interface Job {
     id: number;
     name: string;
     description: string;
+    profile: string;
+    recruitment_process: string;
     contract_type: {
         en: string
     };
@@ -11,6 +13,12 @@ export interface Job {
     office: {
         name: string;
     };
+    websites_urls: WebSiteReference[]
+}
+
+export interface WebSiteReference {
+    website_reference: string;
+    url: string;
 }
 
 export interface FilterState {
