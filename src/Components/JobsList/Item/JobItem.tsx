@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text } from '@welcome-ui/text';
 import { Button } from '@welcome-ui/button';
+import JobDescription from '../../JobDescription/JobDescription';
 import { Job } from '../../../model';
 import './JobItem.css';
 
@@ -15,7 +16,7 @@ const JobItem: React.FC<Props> = ({ job }) => {
     </div>
     <Text variant="subtitle2">{job.contract_type.en}</Text>
     <Text variant="subtitle2">{job.office.name}</Text>
-    <Button variant="tertiary" size='sm'>Show More</Button>
+    <JobDescription job={job} />
   </div>
 }
 

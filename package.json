@@ -13,6 +13,7 @@
     "@welcome-ui/button": "^4.0.5",
     "@welcome-ui/core": "^4.0.5",
     "@welcome-ui/input-text": "^4.0.5",
+    "@welcome-ui/modal": "^4.0.6",
     "@welcome-ui/select": "^4.0.5",
     "@welcome-ui/text": "^4.0.5",
     "@xstyled/styled-components": "^3.6.0",

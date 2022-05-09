@@ -2275,6 +2275,15 @@
     "@welcome-ui/icons.cross" "^4.0.5"
     "@welcome-ui/system" "^4.0.5"
 
+"@welcome-ui/close-button@^4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/close-button/-/close-button-4.0.5.tgz#adb800aaa516cb0f39ab5ccc833e414f032dd334"
+  integrity sha512-+UKYBH5MogmnGHS0xzNHZS6H/EsV7/mzPb9e6xCwKkF6QKMocOtSE+6La7rqF516g+GOG206iiG9lHdGMyBNNA==
+  dependencies:
+    "@welcome-ui/button" "^4.0.5"
+    "@welcome-ui/icons.cross" "^4.0.5"
+    "@welcome-ui/system" "^4.0.5"
+
 "@welcome-ui/core@^4.0.5":
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/@welcome-ui/core/-/core-4.0.5.tgz#ea6ef1d0bc63524b75df9aa7f2639a7ad08ce831"
@@ -2380,6 +2389,19 @@
     "@welcome-ui/utils" "^4.0.5"
     "@welcome-ui/variant-icon" "^4.0.5"
 
+"@welcome-ui/modal@^4.0.6":
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/modal/-/modal-4.0.6.tgz#74bc4e6966ec9f7eb49f6ed4347f2840bbdbfad8"
+  integrity sha512-nbK6gfocToGHmDU67rs7aWSN42ERhyDkdJMG+5W7GrJYG26YTvZXW1KbiXycx4mBQmmUpo+BCgFrTSTtxJhXKg==
+  dependencies:
+    "@welcome-ui/box" "^4.0.5"
+    "@welcome-ui/close-button" "^4.0.5"
+    "@welcome-ui/shape" "^4.0.5"
+    "@welcome-ui/system" "^4.0.5"
+    "@welcome-ui/text" "^4.0.5"
+    "@welcome-ui/utils" "^4.0.5"
+    reakit "^1.3.11"
+
 "@welcome-ui/select@^4.0.5":
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/@welcome-ui/select/-/select-4.0.5.tgz#2eb24d8f51da72dde5d94639c39e291782f0b185"
@@ -2392,6 +2414,14 @@
     "@welcome-ui/utils" "^4.0.5"
     downshift "^6.1.0"
     match-sorter "^6.3.1"
+
+"@welcome-ui/shape@^4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/shape/-/shape-4.0.5.tgz#c0384fc4e6e23c0642199486a331214b5c90a26d"
+  integrity sha512-DGU/fVdjHPj8B0sWyomnN6uxoKuobCmtIEICCQo7+PkiMbnzh7dZHI3X4RhPtkFYrgXO5voG0+9umiVxiOJc3A==
+  dependencies:
+    "@welcome-ui/system" "^4.0.5"
+    "@welcome-ui/utils" "^4.0.5"
 
 "@welcome-ui/system@^4.0.5":
   version "4.0.5"
