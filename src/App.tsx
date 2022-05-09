@@ -10,14 +10,16 @@ const filterReducer = (state: FilterState, { type, value }: FilterAction) => {
     case "onBaseFilter":
       return {
         ...state,
-        selectFields: state.selectFields.concat(value.selectFields)
+        selectFields: [...state.selectFields, ...value.selectFields]
       };
-      case "onUpdateFilter": {
-        console.log("state", state)
-        throw new Error("test");
-      }
-      default:
-        throw new Error(`Unknow type: ${type}`);
+    case "onUpdateFilter": {
+      return {
+        ...state,
+        selectedField: value
+      };
+    }
+    default:
+      throw new Error(`Unknow type: ${type}`);
   }
 }
 
@@ -29,7 +31,7 @@ const App:React.FC = () => {
   // Used when searching by input text
   const [inputTextValue, setInputTextValue] = useState<string>('');
   const [filtredsJobs, setFiltredJobs] = useState<Job[]>([]);
-  const [value, setValue] = useState(null)
+  // Used when searching by input text
   const [state, dispatch] = useReducer(filterReducer, {
     selectedField: "Group by",
     selectFields: ["Group by"]
