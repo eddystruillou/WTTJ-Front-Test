@@ -8,3 +8,13 @@ export interface Job {
         name: string;
     };
 }
+
+export interface FilterState {
+    selectedField: string;
+    selectFields: string[];
+}
+  
+export interface FilterAction {
+    type: string;
+    value: any;
+}
