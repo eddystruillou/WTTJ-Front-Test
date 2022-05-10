@@ -13,7 +13,7 @@ const JobDescription = ({ job }: {job: Job}) => {
     const modal = useModalState();
 
     return <>
-        <Modal.Trigger as={Button} {...modal}>
+        <Modal.Trigger as={Button} {...modal} bg="#FFCD00" borderColor="#FFCD00" color="dark.900" borderRadius="0">
         See more
       </Modal.Trigger>
       <Modal {...modal} size='md' ariaLabel="example">

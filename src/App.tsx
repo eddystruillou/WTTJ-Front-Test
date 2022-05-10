@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useReducer } from 'react';
-import './App.css';
 import JobList from './Components/JobsList/JobList';
 import SearchBar from './Components/Filters/SearchBar/SearchBar';
 import SelectionField from './Components/Filters/SelectionField/SelectionField';
+import { Box } from '@welcome-ui/box';
+import { Text } from '@welcome-ui/text';
 import { Job, FilterState, FilterAction } from './model';
 
 const filterReducer = (state: FilterState, { type, value }: FilterAction) => {
@@ -33,8 +34,8 @@ const App:React.FC = () => {
   const [filtredsJobs, setFiltredJobs] = useState<Job[]>([]);
   // Used when searching by input text
   const [state, dispatch] = useReducer(filterReducer, {
-    selectedField: "Group by",
-    selectFields: ["Group by"]
+    selectedField: "All",
+    selectFields: ["All"]
   });
 
   /**
@@ -95,11 +96,20 @@ const App:React.FC = () => {
       )
   }, [])
 
-  return <div className="App">
-    <SearchBar handleChange={handleChange} value={inputTextValue} />
-    <SelectionField state={state} dispatch={dispatch} />
-    <JobList jobs={filtredsJobs.length <= 0 && inputTextValue.length === 0 ? jobs : filtredsJobs} />
-  </div>
+  return <Box display="flex" w="100%" justifyContent="center" alignItems="center" backgroundColor="nude.100">
+    <Box w={650} backgroundColor="light.900" boxShadow="md" margin="xl">
+      <Text variant="h3" display="flex" justifyContent="center">Discover our job offers</Text>
+      <Box p="md" display="flex" mb="xs" alignItems="center">
+        <Box w="60%" mr="xs" >
+          <SearchBar handleChange={handleChange} value={inputTextValue} />
+        </Box>
+        <Box w="40%" >
+          <SelectionField state={state} dispatch={dispatch} />
+        </Box>
+      </Box>
+        <JobList jobs={filtredsJobs.length <= 0 && inputTextValue.length === 0 ? jobs : filtredsJobs} />
+    </Box>
+  </Box>
 }
 
 export default App;

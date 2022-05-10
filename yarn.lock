@@ -2311,6 +2311,14 @@
     "@welcome-ui/label" "^4.0.5"
     "@welcome-ui/system" "^4.0.5"
 
+"@welcome-ui/grid@^4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/grid/-/grid-4.0.5.tgz#51060afd79c13c07e0750320b560ecdc7a84c836"
+  integrity sha512-iPI+HlRsHBNJvBZiHWnvpbPTqs8Ey3it756p9IZZAXNvh2n3vkZwXX6vhPx5s4A9Tw21e/8YTNRhki877/+OXg==
+  dependencies:
+    "@welcome-ui/box" "^4.0.5"
+    "@welcome-ui/system" "^4.0.5"
+
 "@welcome-ui/hint@^4.0.5":
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/@welcome-ui/hint/-/hint-4.0.5.tgz#eb608ea8f58f45204e1f523228cc38bf5de37244"

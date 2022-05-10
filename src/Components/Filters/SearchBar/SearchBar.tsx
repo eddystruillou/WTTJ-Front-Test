@@ -8,9 +8,7 @@ interface Props {
 }
 
 const SearchBar: React.FC<Props> = ({ value, handleChange}) => {
-  return <div className="searchBar">
-    <InputText name="firstName" size="sm" placeholder="Your dream job?" value={value} onChange={handleChange} />
-  </div>
+  return <InputText name="firstName" size="md" placeholder="Your dream job?" value={value} onChange={handleChange} />
 }
 
 export default SearchBar;

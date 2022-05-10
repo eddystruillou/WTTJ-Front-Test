@@ -12,23 +12,22 @@ interface SelectionProps {
 }
 
 const SelectionField: React.FC<SelectionProps> = ({ state, dispatch }) => {
-    return <div className="selectionField">
-        <Select
-            options={state.selectFields.map(
-            filter => ({
-              label: filter,
-              value: filter
-            }))} 
-            name="welcome" 
-            value={state.selectedField}
-            onChange={(value: (OptionValue | OptionValue[])) =>
-                dispatch({
-                  type: "onUpdateFilter",
-                  value
-                })
-              }
-        />
-    </div>
+    return <Select
+      size="md"
+      options={state.selectFields.map(
+      filter => ({
+        label: filter,
+        value: filter
+      }))} 
+      name="welcome" 
+      value={state.selectedField}
+      onChange={(value: (OptionValue | OptionValue[])) =>
+          dispatch({
+            type: "onUpdateFilter",
+            value
+          })
+        }
+    />
 }
 
 export default SelectionField;

@@ -10,6 +10,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@welcome-ui/box": "^4.0.5",
     "@welcome-ui/button": "^4.0.5",
     "@welcome-ui/core": "^4.0.5",
     "@welcome-ui/input-text": "^4.0.5",
