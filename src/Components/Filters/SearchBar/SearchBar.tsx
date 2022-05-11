@@ -6,7 +6,7 @@ interface Props {
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const SearchBar: React.FC<Props> = ({ value, handleChange}) => {
+const SearchBar: React.FC<Props> = ({ value, handleChange }) => {
   return <InputText name="firstName" size="md" placeholder="Your dream job?" value={value} onChange={handleChange} />
 }
 
