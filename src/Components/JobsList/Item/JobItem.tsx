@@ -12,8 +12,8 @@ const JobItem: React.FC<Props> = ({ job }) => {
   return <Box p="md" display="flex" boxShadow="md">
       <Box w="80%">
         <Text variant="subtitle1" lines={1}>{job.name}</Text>
-        <Text variant="subtitle2">{job.contract_type.en}</Text>
-        <Text variant="subtitle2">{job.office.name}</Text>
+        <Text variant="meta1">{job.contract_type.en}</Text>
+        <Text variant="meta1">{job.office.name}</Text>
       </Box>
       <Box w="20%" display="flex" justifyContent="center" alignItems="center">
         <JobDescription job={job} />
