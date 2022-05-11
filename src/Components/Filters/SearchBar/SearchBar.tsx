@@ -1,6 +1,5 @@
 import React from 'react';
 import { InputText } from '@welcome-ui/input-text';
-import './SearchBar.css';
 
 interface Props {
   value: string,

@@ -1,7 +1,6 @@
 import React from 'react';
 import { OptionValue, Select } from '@welcome-ui/select';
 import { FilterState } from '../../../model';
-import './SelectionField.css';
 
 interface SelectionProps {
     state: FilterState;

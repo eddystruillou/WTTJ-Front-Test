@@ -3,7 +3,6 @@ import { Text } from '@welcome-ui/text';
 import { Box } from '@welcome-ui/box';
 import JobDescription from '../../JobDescription/JobDescription';
 import { Job } from '../../../model';
-import './JobItem.css';
 
 interface Props {
   job: Job;

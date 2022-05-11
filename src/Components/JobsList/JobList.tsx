@@ -2,7 +2,6 @@ import React from 'react';
 import JobItem from './Item/JobItem';
 import { Box } from '@welcome-ui/box';
 import { Job } from '../../model';
-import './JobList.css';
 
 interface Props {
   jobs: Job[];
