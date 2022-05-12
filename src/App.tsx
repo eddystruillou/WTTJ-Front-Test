@@ -53,8 +53,8 @@ const App:React.FC = () => {
    useEffect(() => {
      // Change our text to lower case format and split the elements after a space
      let text = inputTextValue.toLowerCase().split(' ');
-    // We start to set up our filter only from 3 letters
-    if(inputTextValue.length >= 2) {
+    // We start filtering from 1 letter
+    if(inputTextValue.length >= 1) {
       setFiltredJobs(jobs.filter(
         (job: Job) => {
           return text.every(el => {
