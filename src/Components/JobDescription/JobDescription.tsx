@@ -5,20 +5,14 @@ import { Box } from '@welcome-ui/box';
 import { Text } from "@welcome-ui/text";
 import { Job } from '../../model';
 
-interface WebSiteReference {
-    url: string | undefined;
-    website_reference: string;
-}
-
 const JobDescription = ({ job }: {job: Job}) => {
-    console.log(job);
     const modal = useModalState();
 
     return <>
         <Modal.Trigger as={Button} {...modal} color="dark.900" borderRadius="0">
         See more
-      </Modal.Trigger>
-      <Modal {...modal} size='md' ariaLabel="example">
+        </Modal.Trigger>
+        <Modal {...modal} size='md' ariaLabel="example">
         <Modal.Title>{job.name}</Modal.Title>
         <Modal.Content>
             <Text variant="h3">Job description</Text>
@@ -43,7 +37,7 @@ const JobDescription = ({ job }: {job: Job}) => {
                 </Box>
             </Box>
         </Modal.Content>
-      </Modal>
+        </Modal>
     </>
 }
 
